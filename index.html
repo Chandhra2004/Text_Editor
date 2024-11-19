@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text Editor</h1>
+        <div class="control-panel">
+            <input type="text" id="text-input" placeholder="Enter text here" />
+            <label for="font-size">Font Size:</label>
+            <input type="number" id="font-size" value="16" min="10" max="50" />
+            <label for="font-style">Font Style:</label>
+            <select id="font-style">
+                <option value="normal">Normal</option>
+                <option value="italic">Italic</option>
+                <option value="bold">Bold</option>
+            </select>
+            <label for="text-color">Text Color:</label>
+            <input type="color" id="text-color" value="#000000" />
+        </div>
+        <button id="add-text">Add Text</button>
+        <div class="action-buttons">
+            <button id="undo">Undo</button>
+            <button id="redo">Redo</button>
+        </div>
+        <div class="editable-area" id="editable-area">
+            <button id="delete-word" class="hidden">Delete</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

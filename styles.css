@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+    color: #333;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007BFF;
+}
+
+.control-panel {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.control-panel input,
+.control-panel select {
+    margin-right: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#add-text {
+    display: block;
+    margin: 20px auto 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#add-text:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 0 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.editable-area {
+    border: 2px solid #ccc;
+    width: 90%;
+    height: 400px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.text-element {
+    cursor: grab;
+    position: absolute;
+    white-space: nowrap;
+    transition: transform 0.2s ease;
+}
+
+.text-element:active {
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#delete-word {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
